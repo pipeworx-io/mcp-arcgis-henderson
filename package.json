@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-arcgis-henderson",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "City of Henderson GIS — Henderson, Nevada open geospatial data (ArcGIS).",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-e92ac94d0fd30c668f1fec60830d645c2bcf8686d7a1dc9f61c224fc00bace5b",
-    "sourceCommit": "351c40908821cfecc9bb2f5849d87bbfdbb26d75"
+    "sourceHash": "v1-1f72b9453d54cf6dc7a199d6b7dce18f128773615df943a8808343787ccfc84c",
+    "sourceCommit": "71f5325b13bb0ea0de2f0f7207885962ec91a484"
   }
 }

@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-arcgis-henderson",
-  "version": "0.1.4",
+  "version": "0.2.0",
   "description": "City of Henderson GIS — Henderson, Nevada open geospatial data (ArcGIS).",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-arcgis-henderson": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "arcgis-henderson"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-arcgis-henderson.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/arcgis-henderson",
   "pipeworx": {
-    "sourceHash": "v1-1f72b9453d54cf6dc7a199d6b7dce18f128773615df943a8808343787ccfc84c",
-    "sourceCommit": "71f5325b13bb0ea0de2f0f7207885962ec91a484"
+    "mode": "gateway",
+    "slug": "arcgis-henderson",
+    "gatewaySlug": "arcgis-henderson",
+    "sourceHash": "v1-afef939665864cfc06446980c9cc2e67281172cb1c098ea81de130d874b6c936",
+    "sourceCommit": "c6136b81713e72ccb22977ca0c0cd981f8c3f081"
   }
 }
